@@ -13,3 +13,11 @@ class Employee(models.Model):
 
     def __str__(self):
         return self.firstname
+
+class Candidate(models.Model):
+    Name=models.CharField(max_length=200,null=True)
+    Email=models.CharField(max_length=200,null=True)
+    PhoneNo=models.CharField(max_length=200,null=True)
+    amount=models.CharField(max_length=200,null=True)
+    trnsId=models.CharField(max_length=200,null=True)
+    userid=models.CharField(max_length=200,null=True)
